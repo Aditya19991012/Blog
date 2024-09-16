@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogger Sign In</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body class="login-body">
+    <h2>Sign In</h2>
+    <div class="login-div">
+        <form class="login-form" action="/login" method="post">
+            <table>
+                <tr>
+                    <td><label for="name">Blogger Name</label></td>
+                    <td><input id="name" type="text" title="Blogger Name" name="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input id="password" type="password" title="Your Blogging Password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Sign In</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

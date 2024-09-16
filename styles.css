@@ -1,0 +1,366 @@
+/* common body and anchor tag */
+body{
+ background: #2C3333;
+ margin: 12% 0 0 0;
+ -webkit-font-smoothing: antialiased;
+  color: #E7F6F2;
+}
+a {
+  text-decoration: none;
+  color: #A5C9CA;
+}
+hr {
+  border-top: dotted 1rem;
+  border-top-color: #A5C9CA;
+  border-bottom: none;
+  border-inline-start: none;
+  border-inline-end: none;
+  width: 10%;
+}
+/* common body and anchor tag */
+
+
+/* header portion for home page*/
+header {
+  background-color: #2C3333;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px 30px;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+@media (max-width: 845px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: 7rem;
+  }
+  .page-title {
+    padding-bottom: 2rem;
+  }
+  body {
+    margin: 20rem 0 0 0;
+  }
+}
+.B-contact {
+  font-family: 'Itim', cursive;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  margin-top: 1%;
+}
+.B-contact:hover {
+  color: #00FFF6;
+}
+.page-title {
+  /*font-family: 'Anton', sans-serif;*/
+  font-family: 'Itim', cursive;
+  font-size: 2rem;
+}
+
+/* Stylised sign up button */
+.raise {
+  --color: #ffd400;
+  --hover: #e5ff60;
+}
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+.sign-in {
+  color: var(--color);
+  transition: 0.25s;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  margin-right: 3rem;
+  margin-top: 2%;
+  padding: 1em 2em;
+}
+.sign-in:hover, .sign-in:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+/* Stylised sign up button */
+/* header portion for home page*/
+
+
+/* Front Page */
+.front-page {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 6%;
+}
+.front-page-title {
+  color: #E7F6F2;
+  font-size: 6rem;
+  font-family: 'Sedgwick Ave', cursive;
+}
+h4 {
+  color: #A5C9CA;
+}
+.frontpage-forward {
+  position: absolute;
+  left: 35%;
+  top: 40rem;
+}
+.frontpage-behind {
+  margin-bottom: 15rem;
+}
+@media (max-width: 940px) {
+  .front-page-combined {
+    width: 90%;
+  }
+  .front-page {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Front Page */
+
+
+/* Intro Sections */
+.SnehaIntro, .AdityaIntro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 8% 0;
+}
+.intro-text {
+  font-size: 3.5rem;
+  color: #E7F6F2;
+  font-family: 'Sedgwick Ave', cursive;
+}
+@media (max-width: 950px) {
+  .intro-image {
+    width: 50%;
+  }
+  .intro-text {
+    padding-left: 3%;
+  }
+}
+/* Intro Sections */
+
+
+/* Home page view of the Blogs*/
+.bogs-preview {
+  margin: 8% 0;
+  text-align: center;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 2.5rem;
+}
+/* making the carousel */
+.carousel {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  text-align: center;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel-item {
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+.card{
+  background: #395B64;
+  padding:50px;
+  width: 70%;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 2px 4px rgba(100,100,100,.1);
+}
+.card > h2 {
+  font-size:2.5rem;
+  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+}
+.card > .text {
+  color:#E7F6F2;
+  margin-top:20px;
+  font-size: 1.5rem;
+  font-family: 'Itim', cursive;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  /*right: 0;*/
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.read {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+/* making the carousel */
+
+/*.card{
+  position: relative;
+  background: #395B64;
+  padding:50px;
+  width: 100%;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 2px 4px rgba(100,100,100,.1);
+}
+.card h2 {
+  font-size:2.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+.card h2 a {
+  color: #E7F6F2;
+  text-decoration:none;
+}
+.card .text {
+  color:#E7F6F2;
+  margin-top:20px;
+  font-size: 1.5rem;
+  line-height:22px;
+  font-family: 'Itim', cursive;
+}*/
+/* Home page view of the Blogs */
+
+
+/* Stylised Form for Blog write-up */
+.wu-title {
+  width: 70%;
+  margin: 5% 15% 2% 15%;
+  height: 5rem;
+  font-size: 2rem;
+}
+.subtitle {
+  width: 70%;
+  margin: 2% 15% 2% 15%;
+  height: 5rem;
+  font-size: 1.5rem;
+}
+textarea {
+  width: 70%;
+  margin: 2% 15% 2% 15%;
+  height: 30rem;
+  font-size: 1rem;
+}
+.upload-blog {
+  width: 20%;
+  margin: 2% 40%;
+  font-size: 1.5rem;
+}
+/* Stylised Form for Blog write-up */
+
+
+/* Blogger Contact Section */
+.contact-icons {
+  margin: 1% 5% 5% ;
+  font-size: 2rem;
+}
+.Blogger-contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5% 0;
+}
+.contact-icons:hover {
+  color: #5C2E7E;
+}
+.Blogger-contacts-text {
+  text-align: left;
+  font-size: 3.5rem;
+  font-family: 'Sedgwick Ave', cursive;
+}
+@media (max-width: 920px) {
+  .Blogger-contacts {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Blogger-contacts-text {
+    text-align: center;
+  }
+}
+/* Blogger Contact Section */
+
+/* Footer section */
+footer {
+  width: 100%;
+  background-color: #395B64;
+  color: #A5C9CA;
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+.dev-contact {
+  color: white;
+  margin: 0.5% 1%;
+}
+.dev-contact:hover {
+  color: #D6E4E5;
+}
+/* Footer section */
+
+
+/* style for individual posts */
+.wrapper{
+  position: relative;
+  clear:both;
+  margin: 0 auto 75px auto;
+  width: 100%;
+  overflow: hidden;
+}
+.top{
+  background: #4e89ae;
+  height: 100px;
+  padding-top: 3rem;
+  color: #F1F6F5;
+}
+.top .post-title {
+  width: 700px;
+}
+
+.post-title h1 {
+  font-size:24px;
+  color:#FFF;
+  font-weight:500;
+}
+.post-title {
+  margin: 0 auto;
+}
+.content{
+  padding-bottom: 20px;
+}
+/* style for individual posts */
+
+
+/* login page styling */
+.login-body {
+  text-align: center;
+}
+.login-form {
+  text-align: right;
+  margin: 0 auto;
+}
+.login-div {
+  padding: 2% 35%;
+}
